@@ -14,145 +14,101 @@
             * {
                 font-family: 'Montserrat', Arial;
             }
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .baslik{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 0 15px 0 15px;
+            }
+
+            .header-text{
+            }
+
+            
+            .navbar{
+                box-shadow: 2x 2px 20px #000;
+            }
+            .navbar ul li{
+                margin: 1rem;
+            }
+            @media (min-width: 576px) {
+                
+             }
+
+            @media (min-width: 768px) {
+                .header-text{
+                    font-size: 150%;
+                    text-align: left;
+                 }
+             }
+
+            @media (min-width: 992px) {
+                .header-text{
+                    font-size: 200%;
+                    text-align: left;
+                }
+             }
         </style>
-        <script>
-            $('.carousel').carousel()
-        </script>
     </head>
 
 
 
     <body>
 
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="img-fluid w-50" src="logo.png"></a>
-            <button type="button" class="navbar-toggler btn btn-toolbar" data-toggle="collapse" data-target="#navbarDown">
+        <nav class="navbar navbar-light bg-white navbar-expand-md sticky-top">
+            <div class="navbar-brand">
+                BUGRA
+            </div>
+            <button type="button" class="navbar-toggler btn btn-outline-tools" data-target="#navbarExpand" data-toggle="collapse">
                 MENU
             </button>
-            <div class="collapse navbar-collapse" id="navbarDown">
+            <div id="navbarExpand" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link text-white p-3">Home</a>
+                        <a href="#" class="navbar-link text-decoration-none">Our mission</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link text-white p-3">Projects</a>
+                        <a href="#" class="navbar-link text-decoration-none">Our ideas</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link text-white p-3">Contact</a>
+                        <a href="#" class="navbar-link text-decoration-none">Vacancies Available</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link text-decoration-none">Info</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link text-decoration-none">Contact</a>
                     </li>
                 </ul>
             </div>
-        </div>
         </nav>
 
-
-        <div id="slides" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#slides" data-slide-to="0" class="active"></li>
-                <li data-target="#slides" data-slide-to="1"></li>
-                <li data-target="#slides" data-slide-to="2"></li>
-            </ol>
-        
-        
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img  class="img-fluid" src="1.1.jpg">
-                <div class="carousel-caption">
-                    <h1 class="text-uppercase">Italy</h1>
-                    <h3 class="d-none d-lg-block d-md-block d-sm-block">Florance</h3>
-                </div>
+        <div class="jumbotron">
+            <div class="row">
+            <div class="col-sm-12 col-md-6 text-center my-auto padding">
+                <h6 class="header-text">MY NAME IS</h6>
+                <h2 class="header-text">BUGRA TOK</h2>
+                <p class="header-text">I am Junior Web Developer based in Turkey.</p>
+                <button type="button" class="btn btn-dark">DISCOVER NOW</button>
             </div>
-            <div class="carousel-item">
-                <img  class="img-fluid" src="2.1.jpg">
-                <div class="carousel-caption">
-                    <h1 class="text-uppercase">Italy</h1>
-                    <h3 class="d-none d-lg-block d-md-block d-sm-block">Pisa</h3>
-                </div>
+            <div class="col-sm-12 col-md-6 text-center">
+                <img src="portfolyo.png" class="img-fluid w-75"></img>
             </div>
-            <div class="carousel-item">
-                <img class="img-fluid" src="3.1.jpg">
-                <div class="carousel-caption">
-                    <h1 class="text-uppercase">Belgium</h1>
-                    <h3 class="d-none d-lg-block d-md-block d-sm-block">Brussels</h3>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-        </div>
-    </div>
-
-
-        <div class="container-fluid">
-            <div class="row jumbotron">
-                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-                    <button class="btn btn-secondary btn-lg" type="button">Learn more</button>
-                </div>
             </div>
         </div>
-
-
-
-        <div class="container-fluid padding">
-            <div class="row welcome text-center">
-                <div class="col-12">
-                    <h1 class="display-4">Build with ease.</h1>
-                </div>
-                <hr>
-            </div>
-            <div class="col-12">
-                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-        </div>
-
-
-        <div class="container-fluid padding">
-            <div class="row padding text-center">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <i class="fas fa-code">?</i>
-                    <h3>HTML5</h3>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <i class="fas fa-code">?</i>
-                    <h3>CSS3</h3>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-code">?</i>
-                    <h3>Bootstrap</h3>
-                </div>
-            </div>
-            <hr class="my-4">
-        </div>
-
-
-
-
-
 
 
 
 
       
     </body>
-
-
-
-
-
-
-
-
-
 
 
 </html>
