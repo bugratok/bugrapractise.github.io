@@ -1,114 +1,39 @@
 <!DOCTYPE html>
-
-<html>
-
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <style>
-            * {
-                font-family: 'Montserrat', Arial;
-            }
-            html, body {
-                width: 100%;
-                height: 100%;
-                margin: 0px;
-                padding: 0px;
-            }
-
-            .baslik{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                padding: 0 15px 0 15px;
-            }
-
-            .header-text{
-            }
-
-            
-            .navbar{
-                box-shadow: 2x 2px 20px #000;
-            }
-            .navbar ul li{
-                margin: 1rem;
-            }
-            @media (min-width: 576px) {
-                
-             }
-
-            @media (min-width: 768px) {
-                .header-text{
-                    font-size: 150%;
-                    text-align: left;
-                 }
-             }
-
-            @media (min-width: 992px) {
-                .header-text{
-                    font-size: 200%;
-                    text-align: left;
-                }
-             }
-        </style>
-    </head>
-
-
-
-    <body>
-
-        <nav class="navbar navbar-light bg-white navbar-expand-md sticky-top">
-            <div class="navbar-brand">
-                BUGRA
-            </div>
-            <button type="button" class="navbar-toggler btn btn-outline-tools" data-target="#navbarExpand" data-toggle="collapse">
-                MENU
-            </button>
-            <div id="navbarExpand" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link text-decoration-none">Our mission</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link text-decoration-none">Our ideas</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link text-decoration-none">Vacancies Available</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link text-decoration-none">Info</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link text-decoration-none">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="jumbotron">
-            <div class="row">
-            <div class="col-sm-12 col-md-6 text-center my-auto padding">
-                <h6 class="header-text">MY NAME IS</h6>
-                <h2 class="header-text">BUGRA TOK</h2>
-                <p class="header-text">I am Junior Web Developer based in Turkey.</p>
-                <button type="button" class="btn btn-dark">DISCOVER NOW</button>
-            </div>
-            <div class="col-sm-12 col-md-6 text-center">
-                <img src="portfolyo.png" class="img-fluid w-75"></img>
-            </div>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <span></span>
+    </label>
+    <div class="nav-container">
+        <ul>
+            <li>
+                Anasayfa
+            </li>
+            <li>
+                Eğitim
+            </li>
+            <li>
+                İletişim
+            </li>
+        </ul>
+    </div>
+    <div class="main-container">
+        <div class="header">
+            <h1>BUGRA TOK</h1>
+            <p>Jr. Front-End Developer</p>
         </div>
-
-
-
-
-      
-    </body>
-
-
+        <div class="about">
+            <h2>Who am I?</h2>
+            <p>I am Bugra</p>
+        </div>
+    </div>
+</body>
 </html>
