@@ -21,6 +21,23 @@ body {
     font-size: 16px;
 }
 
+.headline {
+    background-color: transparent;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+}
+
+.headline h2 {
+    text-shadow: 3px 0px black;
+    color: white;
+    font-weight: 300;
+}
+
 .nav-container {
     z-index: 2;
     position: fixed;
@@ -53,11 +70,16 @@ body {
     align-items: center;
     font-size: 20px;
     cursor: pointer;
-    width: auto;
+    width: 125px;
     height: 50px;
     margin: 0 auto;
     color: white;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.nav-options li a {
+    text-decoration: none;
+    color: white;
 }
 
 .nav-options li:hover {
@@ -288,6 +310,41 @@ progress {
 .line3.open {
     width: 25px;
     transform: translateY(-10px) rotate(45deg) ;
+}
+
+
+.socials {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    transition: 1s all;
+    margin: 0 10px;
+}
+
+.social a {
+    font-size: 1.2rem;
+    color: #eee;
+    transition: .3s all ease-in-out;
+
+}
+
+.linkedin:hover {
+    color: #0e76a8;
+}
+
+.github:hover {
+    color: #6cc644;
+}
+
+.instagram:hover {
+    color: #8a3ab9;
+}
+
+.telegram:hover {
+    color: #0088cc;
 }
 
 
