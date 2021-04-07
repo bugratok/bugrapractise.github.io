@@ -8,6 +8,10 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     overflow-x: hidden;
@@ -17,33 +21,19 @@ body {
     font-size: 16px;
 }
 
-#check {
-    display: none;
-}
-
-label{
-    position: absolute;
-    z-index: 3;
-}
-
-
 .nav-container {
     z-index: 2;
     position: fixed;
-    width: 15rem;
+    width: 100%;
     height: 100%;
-    background-color: rgba(25, 25, 200, .7);
-    left: -15rem;
+    background-color: rgb(37, 37, 107);
+    left: -100%;
     transition: 100ms all ease;
 }
 
 .main-content {
     transition: 100ms all ease;
     width: 100%;
-}
-
-.main-content.active {
-    margin-left: 15rem;
 }
 
 
@@ -57,6 +47,7 @@ label{
 }
 
 .nav-options li {
+    user-select: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,12 +55,12 @@ label{
     cursor: pointer;
     width: auto;
     height: 50px;
-    margin: 0 16px;
-    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    margin: 0 auto;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 
 .nav-options li:hover {
-    margin-left: 20px;
     transition: .5s all;
     background-color: #304294;
 }
@@ -149,24 +140,20 @@ label{
     }
 }
 
-#check:checked ~ .nav-container {
+.nav-container.open {
     left: 0;
 }
 
 
-#check:checked + label span {
-    
+.span.open {
     transition: 200ms all;
     width: 25px
 }
 
-#check:checked + label span::after {
-    transition: 200ms all;
-    width: 25px
-}
 
 
 .wrapper {
+    overflow: hidden;
     width: 100%;
     display: flex;
     align-items: center;
@@ -254,36 +241,56 @@ progress {
     box-shadow: 1px 5px 15px darkcyan;
   }
 
-
-
-label span {
-    margin: 15px;
-    display: block;
+  
+#check {
     position: fixed;
-    width: 15px;
-    border-bottom: 3px solid white;
-    transition: .5s all;
+    top: 15px;
+    left: 5px;
+    z-index: 3;
 }
 
-label span::after {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    content: '';
+.line1 {
     display: block;
-    width: 20px;
-    border-bottom: 3px solid white;
-    transition: .5s all;
-}
-
-label span::before {
-    transition: .5s all;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    content: '';
-    display: block;
+    background-color: white;
+    margin: 5px 10px;
+    border: 1px solid white;
     width: 25px;
-    border-bottom: 3px solid white;
+    transition: .5s all;
 }
+
+.line1.open {
+    transform: translateY(4px) rotate(-45deg) ;
+}
+
+.line2 {
+    display: block;
+    background-color: white;
+    margin: 5px 10px;
+    border: 1px solid white;
+    width: 20px;
+    transition: .5s all;
+}
+
+.line2.open {
+    transform: translateX(-100px);
+}
+
+.line3 {
+    display: block;
+    background-color: white;
+    margin: 5px 10px;
+    border: 1px solid white;
+    width: 15px;
+    transition: .5s all;
+}
+
+
+.line3.open {
+    width: 25px;
+    transform: translateY(-10px) rotate(45deg) ;
+}
+
+
 
 ::-webkit-scrollbar{
     width: 5px;
