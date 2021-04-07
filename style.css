@@ -68,7 +68,7 @@ body {
 .virus {
     width: 100%;
     height: auto;
-    opacity: .5;
+    opacity: .3;
     user-select: none;
 
 }
@@ -114,7 +114,7 @@ body {
     display: inline-block;
     border: 1px solid white;
     border-radius: 50px;
-    width: 10px;
+    width: 15px;
     height: 30px;
 }
 
@@ -125,7 +125,7 @@ body {
     border-radius: 50px;
     width: 5px;
     height: 5px;
-    animation: sallanma 1.5s infinite ease;
+    animation: sallanma 2s infinite ease;
 }
 
 @keyframes sallanma {

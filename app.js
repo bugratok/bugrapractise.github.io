@@ -10,3 +10,4 @@ hamburger.addEventListener('click', function(){
     span2.classList.toggle("open");
     span3.classList.toggle("open");
 });
+
