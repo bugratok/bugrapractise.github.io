@@ -6,7 +6,10 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', 'sans-serif';
     list-style: none;
+    
 }
+
+
 
 html {
     scroll-behavior: smooth;
@@ -22,20 +25,24 @@ body {
 }
 
 .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 2;
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgb(37, 37, 107);
+    background-color: rgb(27, 37, 107, .95);
     left: -100%;
     transition: 100ms all ease;
 }
 
-.main-content {
-    transition: 100ms all ease;
-    width: 100%;
+.name-date {
+    font-size: .8rem;
+    color: #eee;
+    margin: auto 0 2rem 0;
 }
-
 
 .nav-options {
     display: flex;
@@ -55,9 +62,9 @@ body {
     cursor: pointer;
     width: 125px;
     height: 50px;
-    margin: 0 auto;
+    margin: 10px auto;
     color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    border: 1px solid rgba(255, 255, 255, .5);
 }
 
 .nav-options li a {
@@ -170,12 +177,11 @@ body {
 
 
 .wrapper2 {
+
     padding: 0px 5%;
     text-align: center;
     line-height: 1.5;
-    height: 100vh;
     width: 100%;
-    background-attachment: fixed;
     overflow: hidden;
     color: white;
     background-color: black;
@@ -192,23 +198,21 @@ body {
 
 
 .wrapper3 {
-    padding: 0px 5%;
+    background-image: url("Stacked Wave.svg");
     text-align: center;
     line-height: 1.5;
-    height: 100vh;
     width: 100%;
-    background-attachment: fixed;
     overflow: hidden;
     color: white;
-    background-color: rgb(9, 12, 49);
+    background-color: rgb(9, 12, 49, .4);
+    background-blend-mode: multiply;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    height: 100vh;
 }
 
 .skills-header {
+    margin-top: 4rem;
     position: relative;
 }
 
@@ -223,19 +227,22 @@ body {
 }
 
 .skills {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .skill{
-    margin-top: 50px;
+    margin: 3rem 1rem;
 }
 
 progress {
+    width: 30vw;
     border-radius: 7px; 
     height: 5px;
     box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+    margin-bottom: .5rem;
   }
+  
   progress::-webkit-progress-bar {
     background-color: white;
     height: 5px;
@@ -344,6 +351,9 @@ progress {
 ::-webkit-scrollbar-track {
     background: black;
 }
+
+::-moz-scrollbar
+
 
 
 @media (min-width:768px){
